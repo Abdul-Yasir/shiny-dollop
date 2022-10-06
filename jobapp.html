@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobapp.css">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="title">Job Application <span id="web">(web)</span></h1>
+
+        <form>
+            <div id="user-details">
+                <div id="input-box">
+                    <label for="details">First Name</label><br>
+                    <input type="text" name="First Name" id="first" placeholder="Enter First Name" required>
+                </div>
+
+                <div id="input-box">
+                    <label for="details">Last Name</label><br>
+                    <input type="text" name="Last Name" id="last" placeholder="Enter Last Name">
+                </div>
+
+                <div id="input-box">
+                    <label for="details">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter Email">
+                </div>
+
+                <div id="input-box">
+                    <label for="details">Job Role</label><br>
+                    <select name="Job-Role" id="jobrole">
+                        <option value="">Select Job Role</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="Backend">Backend Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="ux-ui">UI UX Designer</option>
+                    </select>
+                </div>
+
+                <div id="input-box">
+                    <label for="details">Address</label><br>
+                    <textarea name="address" id="address" cols="40" rows="3" placeholder="Enter Address"></textarea>
+                </div>
+                <div id="input-box">
+                    <label for="details">City</label><br>
+                    <input type="city" id="city" placeholder="Enter City Name">
+                </div>
+                <div id="input-box">
+                    <label for="details">Zipcode</label><br>
+                    <input type="number" id="zipcode" placeholder="Enter Zipcode">
+                </div>
+                <div id="input-box">
+                    <label for="details">Date</label>
+                    <input type="date" id="date" value="9-28-2022">
+                </div>
+                <div id="input-box">
+                    <label for="details">Upload Your CV</label>
+                    <input type="file" id="upload">
+                </div>
+                <div id="gender">
+                    <span id="gender-title">Gender</span>
+                    <div id="category">
+                        <label for="gender-details">Male</label>
+                        <input type="radio" name="Gender" id="M" value="M">
+                        <label for="gender-details">Female</label>
+                        <input type="radio" name="Gender" id="F" value="F">
+                    </div>
+                </div>
+                <div id="button">
+                    <button>Apply Now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

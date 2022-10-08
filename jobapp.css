@@ -120,3 +120,60 @@ button {
 button:hover {
     background: rgb(91, 201, 245);
 }
+
+@media (max-width: 576px) {
+    #container {
+        max-width: 400px;
+        margin-top: 100%;
+        margin-right: 3px;
+    }
+
+    #container #title {
+        font-size: 20px;
+    }
+
+    #container form #user-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        box-sizing: border-box;
+    }
+
+    #user-details #input-box input {
+        width: 300px;
+    }
+
+    #jobrole {
+        width: 300px;
+    }
+
+    #gender {
+        margin-bottom: 30px;
+    }
+
+    button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    #container {
+        margin-top: 450px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    #user-details #input-box input {
+        width: 250px;
+    }
+
+    #jobrole {
+        width: 250px;
+    }
+
+    #address {
+        width: 250px;
+    }
+}
